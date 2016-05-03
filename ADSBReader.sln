@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADSBReader", "ADSBReader\ADSBReader.csproj", "{36AE03C8-C6DC-4666-B3D0-0EF7780FC3AE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7B660D6D-0655-4813-B36F-DD99FEEE19F3} = {7B660D6D-0655-4813-B36F-DD99FEEE19F3}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metacraft.SimSuite.Network", "..\Metacraft.SimSuite.Network\Metacraft.SimSuite.Network.csproj", "{7B660D6D-0655-4813-B36F-DD99FEEE19F3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{36AE03C8-C6DC-4666-B3D0-0EF7780FC3AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36AE03C8-C6DC-4666-B3D0-0EF7780FC3AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36AE03C8-C6DC-4666-B3D0-0EF7780FC3AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36AE03C8-C6DC-4666-B3D0-0EF7780FC3AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B660D6D-0655-4813-B36F-DD99FEEE19F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B660D6D-0655-4813-B36F-DD99FEEE19F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B660D6D-0655-4813-B36F-DD99FEEE19F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B660D6D-0655-4813-B36F-DD99FEEE19F3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
