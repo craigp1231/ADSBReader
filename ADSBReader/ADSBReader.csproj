@@ -36,6 +36,10 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Metacraft.SimSuite.Network, Version=1.0.5962.33612, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\Metacraft.SimSuite.Network.dll</HintPath>
+    </Reference>
     <Reference Include="MetroFramework">
       <HintPath>..\..\viperneo-winforms-modernui-996acbd\MetroFramework.Design\bin\Release\MetroFramework.dll</HintPath>
     </Reference>
@@ -142,12 +146,6 @@
     <Content Include="rtlsdr.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\Metacraft.SimSuite.Network\Metacraft.SimSuite.Network.csproj">
-      <Project>{7b660d6d-0655-4813-b36f-dd99feee19f3}</Project>
-      <Name>Metacraft.SimSuite.Network</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
