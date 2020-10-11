@@ -73,6 +73,11 @@ namespace ADSBReader
                 if (mmsg.SelectedAltitude != null)
                     a.MCPAltitude = (ushort)mmsg.SelectedAltitude;
             }
+            else if (msg is ModeSIAS)
+            {
+                ModeSIAS mmsg = (ModeSIAS)msg;
+                a.IAS = mmsg.IAS;
+            }
 
             // Process secondary
             if (msg.SecondaryMessage != null)

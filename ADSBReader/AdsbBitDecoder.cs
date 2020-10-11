@@ -722,9 +722,19 @@ namespace ADSBReader
 
                 selalt = RoundToNearest(selalt, 100);
 
+                float pressure = ((((msg[3] & 0x1f) << 7) | (msg[4] >> 1)) / 10) +800;
+
                 // Valid if alt is devisible by 1000, this is a fail safe as we dont know for sure this is a target state parket
                 if (selalt % 1000 == 0 && selalt > 0)
-                    return new ModeSTargetState(ICAO, (ushort?)selalt, null, null);
+                    return new ModeSTargetState(ICAO, (ushort?)selalt, (ushort?)pressure, null);
+            }
+            else if ((msg[1] & 8) == 8)
+            {
+                // attempt to decode indicated airspeed
+
+                int ias = (msg[1] & 7) << 7 | (msg[2] >> 1);
+
+                return new ModeSIAS(ICAO, (ushort)ias);
             }
 
             return null;

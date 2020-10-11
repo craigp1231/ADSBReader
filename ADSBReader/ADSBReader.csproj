@@ -91,6 +91,7 @@
     <Compile Include="ModeSMessage.cs" />
     <Compile Include="ModeSMessageConsumer.cs" />
     <Compile Include="ModeSSquitterIdent.cs" />
+    <Compile Include="ModeSIAS.cs" />
     <Compile Include="ModeSTargetState.cs" />
     <Compile Include="NativeMethods.cs" />
     <Compile Include="NetworkInterface.cs" />

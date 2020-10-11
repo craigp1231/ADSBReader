@@ -34,6 +34,8 @@ namespace ADSBReader
         private ushort _mcpaltitude;
         private DateTime _mcpaltitude_time;
         private bool _mcpaltchanged;
+        private DateTime _ias_time;
+        private ushort _ias;
 
         private List<KMLPosition> _position_store = new List<KMLPosition>();
 
@@ -88,6 +90,20 @@ namespace ADSBReader
                 _speed = value;
 
                 _speed_time = DateTime.Now;
+                LastSeen = DateTime.Now;
+            }
+        }
+        public ushort IAS
+        {
+            get
+            {
+                return _ias;
+            }
+            set
+            {
+                _ias = value;
+
+                _ias_time = DateTime.Now;
                 LastSeen = DateTime.Now;
             }
         }
@@ -172,6 +188,10 @@ namespace ADSBReader
         public DateTime SpeedTime
         {
             get { return _speed_time; }
+        }
+        public DateTime IASTime
+        {
+            get { return _ias_time; }
         }
         public DateTime HeadingTime
         {

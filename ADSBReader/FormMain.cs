@@ -102,7 +102,7 @@ namespace ADSBReader
 
                 if (a.SpeedTime != DateTime.MinValue)
                 {
-                    metroGrid1.Rows[idx].Cells[7].Value = a.Speed;
+                    metroGrid1.Rows[idx].Cells[7].Value = string.Format("{0} ({1})", a.Speed, a.IAS);
                     metroGrid1.Rows[idx].Cells[7].Style.ForeColor = ColorForTime(a.SpeedTime);
                 }
 
